@@ -2,6 +2,14 @@
 
 Angular 4 module with components and services for drawing different charts for dhis2 apps
 
+# Dependencies
+
+1. lodash `npm install --save lodash`
+
+2. highcharts `npm install --save highcharts`
+
+3. highcharts `npm install --save highcharts-grouped-categories`
+
 # Installation
 
 This module assumes that the angular app is created using [angular cli](https://cli.angular.io/).
@@ -10,7 +18,7 @@ To use this module add it as git submodule on your working directory (app direct
 
 `git submodule add git@github.com:hisptz/chart-module.git src/app/chart-module`
 
-### Using Submodules
+# Using Submodules
 
 In order to fill in the submodule’s path with the files from the external repository, you must first initialize the submodules and then update them.
 
