@@ -1273,9 +1273,9 @@ export class ChartService {
     if (analyticsObject) {
       const yAxisDimensionArray =
         analyticsObject.metaData.dimensions[yAxisType];
-      const xAxisDimensionArray = _.reverse(
-        analyticsObject.metaData.dimensions[xAxisType]
-      );
+      const xAxisDimensionArray = [..._.reverse(
+        [...analyticsObject.metaData.dimensions[xAxisType]]
+      )];
       const yAxisDimensionIndex = _.findIndex(
         analyticsObject.headers,
         _.find(analyticsObject.headers, ['name', yAxisType])
