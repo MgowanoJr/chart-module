@@ -504,7 +504,7 @@ export class ChartService {
             seriesCategoryNamesArray[0],
             'name'
           );
-          const categoryNameGroupKeys = _.keys(groupedCategoryNames);
+          const categoryNameGroupKeys = _.map(seriesCategoryNamesArray[0], category => category.name);
           const sanitizedCategoryNames: any[] = [];
           _.forEach(categoryNameGroupKeys, (key: any) => {
             const categories = _.filter(
