@@ -1031,6 +1031,7 @@ export class ChartService {
   private _getChartAttributeOptions(chartConfiguration: any) {
     const chartOptions: any = {
       renderTo: chartConfiguration.renderId,
+      zoomType: 'xy',
       type: this._getAllowedChartType(chartConfiguration.type)
     };
 
